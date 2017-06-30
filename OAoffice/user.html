@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+
+        .mar_5{width: 40px;margin-top: 5px}
+        .pad_10{padding-bottom: 10px}
+        .badge{background: red}
+        .img60{width: 60px;}
+        footer{text-align: center;padding: 20px;}
+        .page-header{margin-top: 0}
+        .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{vertical-align: middle}
+        .choose{padding:10px;border:1px solid #eee;border-top: none;}
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">OA办公系统</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home  active"></span>&nbsp;管理首页</a></li>
+                <li class="active"><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp;用户管理</a></li>
+                <li><a href="content.html"><span class="glyphicon glyphicon-file"></span>&nbsp;内容管理</a></li>
+                <li><a href="label.html"><span class="glyphicon"></span>&nbsp;标签管理</a></li>
+                <li><a href="emil.html"><span class="glyphicon glyphicon-envelope"></span>&nbsp;我的邮箱&nbsp;<span class="badge">42</span></a></li>
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><div class="mar_5"><img src="images/touxiang.jpg" class="img-circle img-responsive"></div></li>
+                <li class="dropdown">                                                   <!--箭头-->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;管理员</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;管理员</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;管理员</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;管理员</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+
+</nav>
+
+<div class="main container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group text-center">
+                <a href="user.html" class="list-group-item active">用户管理</a>
+                <a class="list-group-item">用户搜索</a>
+                <a class="list-group-item"  data-toggle="modal" data-target="#myModal">添加用户</a>
+            </div>
+        </div>
+
+        <div class="col-md-10">
+            <div class="page-header">
+                <h4>用户搜索</h4>
+            </div>
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab">用户管理</a></li>
+                <li><a href="#search" data-toggle="tab">用户搜索</a></li>
+                <li data-toggle="modal" data-target="#myModal"><a>添加用户</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>用户名</th>
+                            <th>邮箱</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>小星</td>
+                            <td>5456421@163.com</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>小星</td>
+                            <td>5456421@163.com</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>小星</td>
+                            <td>5456421@163.com</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>小星</td>
+                            <td>5456421@163.com</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>小星</td>
+                            <td>5456421@163.com</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>小星</td>
+                            <td>5456421@163.com</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="search">
+                    <div class="form-wrap">
+                        <form class="choose">
+                            <div class="alert alert-info" role="alert">
+                                <strong>技巧提示:</strong>支持模糊搜索和匹配搜索,匹配搜索使用*代替
+                            </div>
+                            <div class="form-group">
+                                <label for="username">用户名</label>
+                                <input type="text" class="form-control" id="username" placeholder="用户名">
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">UID</label>
+                                <input type="text" class="form-control" id="userId" placeholder="输入用户UID">
+                            </div>
+                            <div class="form-group">
+                                <label for="vip">选择用户</label>
+                                <select class="form-control" id="vip">
+                                    <option>限制会员</option>
+                                    <option>初级会员</option>
+                                    <option>中级会员</option>
+                                    <option>高级会员</option>
+                                </select>
+                            </div>
+
+                            <button class="btn btn-default" type="submit">提交</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="newuser">用户名</label>
+                                        <input type="text" id="newuser" class="form-control" placeholder="用户名" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newpass">用户密码</label>
+                                        <input type="text" id="newpass" class="form-control" placeholder="请输入密码" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passcon">确认用户密码</label>
+                                        <input type="text" id="passcon" class="form-control" placeholder="确认用户密码" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newemil">请输入邮箱</label>
+                                        <input type="text" id="newemil" class="form-control" placeholder="请输入邮箱" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newvip">所属用户组</label>
+                                        <select class="form-control" id="newvip">
+                                            <option>限制会员</option>
+                                            <option>初级会员</option>
+                                            <option>中级会员</option>
+                                            <option>高级会员</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">确认</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <nav aria-label="Page navigation" class="pull-right">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p class="pad_10">联系方式:1324632</p>
+</footer>
+</body>
+</html>
+<script>
+    $(function(){
+        $('ul.nav li').click(function(){
+            var i=$(this).index();
+            if(i==0||i==1){
+                $('.main .col-md-2').find('a').eq(i).addClass('active').siblings().removeClass('active');
+            }
+        });
+        $('.main .col-md-2').find('a').click(function(){
+            var i=$(this).index();
+
+            if(i==0||i==1){
+                console.log(i);
+                $(this).eq(i).addClass('active').siblings('a').removeClass('active');
+                $('ul.nav li').eq(i).addClass('active').siblings().removeClass('active');
+            }
+        })
+    })
+
+</script>
